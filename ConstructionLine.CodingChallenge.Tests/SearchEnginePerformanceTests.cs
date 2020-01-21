@@ -40,9 +40,9 @@ namespace ConstructionLine.CodingChallenge.Tests
             sw.Stop();
             Console.WriteLine($"Test fixture finished in {sw.ElapsedMilliseconds} milliseconds");
 
-            AssertResults(results.Shirts, options);
-            AssertSizeCounts(_shirts, options, results.SizeCounts);
-            AssertColorCounts(_shirts, options, results.ColorCounts);
+            AssertResults(results?.Shirts, options);
+            AssertSizeCounts(_shirts, options, results?.SizeCounts);
+            AssertColorCounts(_shirts, options, results?.ColorCounts);
         }
     }
 }
